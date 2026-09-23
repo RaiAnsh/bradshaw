@@ -1,5 +1,7 @@
 import { Hero } from "@/components/Hero";
-import { TrustBar } from "@/components/TrustBar";
+import { AboutIntroSection } from "@/components/AboutIntroSection";
+import { RemodelBand } from "@/components/RemodelBand";
+import { OurWorkSection } from "@/components/OurWorkSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ProductCategoriesSection } from "@/components/ProductCategoriesSection";
 import { GalleryTeaserSection } from "@/components/GalleryTeaserSection";
@@ -10,8 +12,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <TrustBar />
+      <AboutIntroSection />
       <ServicesSection />
+      <RemodelBand />
+      <OurWorkSection />
       <ProductCategoriesSection />
       <GalleryTeaserSection />
       <TestimonialsSection />

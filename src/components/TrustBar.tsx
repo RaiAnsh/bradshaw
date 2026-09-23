@@ -1,5 +1,5 @@
 const stats = [
-  { value: "25+", label: "Years in Business" },
+  { value: "35+", label: "Years in Business" },
   { value: "24/7", label: "Emergency Service" },
   { value: "100%", label: "Licensed & Insured" },
   { value: "WSIB", label: "Covered Technicians" },

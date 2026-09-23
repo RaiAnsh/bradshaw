@@ -7,7 +7,7 @@ export function InlineCTABanner({ text, ctaLabel = "Request a Free Estimate" }: 
         <p className="font-heading text-lg font-bold text-brand-navy">{text}</p>
         <Link
           href="#estimate"
-          className="whitespace-nowrap rounded-full bg-brand-blue px-6 py-3 text-sm font-bold text-white shadow-sm shadow-brand-blue/30 transition-all hover:bg-brand-blue-dark"
+          className="whitespace-nowrap rounded-full bg-brand-accent px-6 py-3 text-sm font-bold text-brand-navy-dark shadow-sm shadow-brand-accent/30 transition-all hover:bg-brand-accent-dark"
         >
           {ctaLabel}
         </Link>

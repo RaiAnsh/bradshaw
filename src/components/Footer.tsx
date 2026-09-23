@@ -24,7 +24,7 @@ export function Footer() {
             </div>
             <p className="mt-4 text-sm leading-6 text-slate-400">
               {siteConfig.tagline}. Scarborough &amp; GTA plumbing, bathroom, and
-              kitchen renovation experts for over 25 years.
+              kitchen renovation experts for over 35 years.
             </p>
             <a
               href={siteConfig.phone.href}

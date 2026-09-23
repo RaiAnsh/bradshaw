@@ -1,81 +1,70 @@
 import Link from "next/link";
+import Image from "next/image";
+import plumber from "../../public/images/plumber.png";
 import { siteConfig } from "@/lib/site-config";
+
+const stats = [
+  { value: "35+", label: "Years in Business" },
+  { value: "24/7", label: "Emergency Service" },
+  { value: "100%", label: "Licensed & Insured" },
+];
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-brand-navy-dark">
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="/videos/plumbing-hero-poster.jpg"
-      >
-        <source src="/videos/plumbing-hero.mp4" type="video/mp4" />
-      </video>
-
-      <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-dark via-brand-navy-dark/70 to-brand-navy-dark/40" />
-      <div className="absolute inset-0 bg-gradient-to-r from-brand-navy-dark/80 via-brand-navy-dark/20 to-transparent" />
-
-      <div className="relative mx-auto w-full max-w-7xl px-4 py-28 sm:px-6 lg:px-8">
-        <div className="max-w-2xl">
-          <span className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-brand-sky ring-1 ring-inset ring-white/20 backdrop-blur-sm">
-            Scarborough &amp; GTA &middot; 25+ Years Trusted
+    <section className="relative overflow-hidden bg-brand-mist">
+      <div className="mx-auto grid max-w-7xl items-end gap-4 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+        <div className="pb-4 pt-14 sm:pt-20 lg:pb-20 lg:pt-24">
+          <span className="text-sm font-semibold text-brand-blue">
+            Scarborough &amp; GTA &middot; 35+ Years Trusted
           </span>
-
-          <h1 className="mt-6 font-heading text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mt-4 font-heading text-4xl font-bold leading-[1.08] text-brand-navy-dark sm:text-5xl lg:text-6xl">
             {siteConfig.tagline}
           </h1>
-
-          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-200">
+          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-700">
             Licensed, insured plumbing, heating, and renovation experts serving
             the GTA 24 hours a day, 7 days a week &mdash; from emergency repairs
             to complete bathroom and kitchen transformations.
           </p>
 
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
             <Link
               href="#estimate"
-              className="inline-flex items-center justify-center rounded-full bg-brand-blue px-8 py-4 text-base font-bold text-white shadow-lg shadow-brand-blue/30 transition-all hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-xl"
+              className="inline-flex items-center justify-center rounded-xl bg-brand-accent px-8 py-4 text-base font-bold text-brand-navy-dark shadow-lg shadow-brand-accent/30 transition-all hover:-translate-y-0.5 hover:bg-brand-accent-dark"
             >
               Request Free Estimate
             </Link>
             <a
               href={siteConfig.phone.href}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 px-8 py-4 text-base font-bold text-white ring-1 ring-inset ring-white/30 backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:bg-white/20"
+              className="border-b-2 border-brand-navy-dark pb-0.5 text-base font-semibold text-brand-navy-dark transition-colors hover:border-brand-blue hover:text-brand-blue"
             >
-              <svg
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 6.75c0 8.284 6.716 15 15 15h1.5a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.362-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
-                />
-              </svg>
               Call {siteConfig.phone.display}
             </a>
           </div>
-        </div>
-      </div>
 
-      <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 animate-bounce sm:block">
-        <svg
-          className="h-7 w-7 text-white/70"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-          aria-hidden="true"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
+          <dl className="mt-12 grid max-w-xl grid-cols-3 divide-x divide-slate-300">
+            {stats.map((stat, i) => (
+              <div key={stat.label} className={i === 0 ? "pr-4 sm:pr-6" : "px-4 sm:px-6"}>
+                <dt className="font-heading text-3xl font-medium text-brand-blue-dark sm:text-4xl">
+                  {stat.value}
+                </dt>
+                <dd className="mt-1 text-sm text-slate-700">{stat.label}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+
+        <div className="relative mx-auto h-[380px] w-full max-w-[520px] sm:h-[540px] lg:h-[640px]">
+          <div className="absolute bottom-[10%] left-1/2 aspect-square h-[78%] -translate-x-1/2 rounded-full bg-brand-blue-dark" />
+          <div className="absolute right-[2%] top-[14%] aspect-square h-[26%] rounded-full border-[3px] border-brand-accent" />
+          <div className="absolute bottom-[18%] left-0 aspect-square h-[13%] rounded-full border-[3px] border-brand-accent" />
+          <Image
+            src={plumber}
+            alt="Bradshaw Plumbing technician reviewing a work order"
+            priority
+            sizes="(min-width: 1024px) 500px, 90vw"
+            className="absolute bottom-0 left-1/2 h-[96%] w-auto max-w-none -translate-x-1/2"
+          />
+        </div>
       </div>
     </section>
   );

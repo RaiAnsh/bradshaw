@@ -40,7 +40,7 @@ export function ServiceHero({ eyebrow, title, subtitle, image, imageAlt }: Servi
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
               href={siteConfig.phone.href}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-blue px-8 py-4 text-base font-bold text-white shadow-lg shadow-brand-blue/30 transition-all hover:-translate-y-0.5 hover:bg-brand-blue-dark hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-accent px-8 py-4 text-base font-bold text-brand-navy-dark shadow-lg shadow-brand-accent/30 transition-all hover:-translate-y-0.5 hover:bg-brand-accent-dark hover:shadow-xl"
             >
               Call Now
             </a>

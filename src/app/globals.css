@@ -2,16 +2,19 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1530;
+  --foreground: #10222a;
 
-  --color-navy: #241a4d;
-  --color-navy-dark: #16102f;
-  --color-purple: #3d2c73;
-  --color-purple-light: #5a44a3;
-  --color-blue: #3f8fd6;
-  --color-blue-dark: #2f74b3;
-  --color-blue-light: #eaf5fd;
-  --color-sky: #8ec7ef;
+  --color-navy: #0f2f36;
+  --color-navy-dark: #08202a;
+  --color-purple: #0b4a55;
+  --color-purple-light: #17707d;
+  --color-blue: #157a87;
+  --color-blue-dark: #0e5f6b;
+  --color-blue-light: #e5f1f2;
+  --color-sky: #8fd0d8;
+  --color-mist: #f4f7f8;
+  --color-accent: #f4b73f;
+  --color-accent-dark: #dc9f26;
 }
 
 @theme inline {
@@ -25,6 +28,9 @@
   --color-brand-blue-dark: var(--color-blue-dark);
   --color-brand-blue-light: var(--color-blue-light);
   --color-brand-sky: var(--color-sky);
+  --color-brand-mist: var(--color-mist);
+  --color-brand-accent: var(--color-accent);
+  --color-brand-accent-dark: var(--color-accent-dark);
   --font-sans: var(--font-body);
   --font-heading: var(--font-heading);
 }

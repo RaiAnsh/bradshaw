@@ -21,7 +21,7 @@ export function PlaceholderPage({
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/#estimate"
-            className="rounded-full bg-brand-blue px-8 py-4 text-base font-bold text-white shadow-lg shadow-brand-blue/30 transition-all hover:-translate-y-0.5 hover:bg-brand-blue-dark"
+            className="rounded-full bg-brand-accent px-8 py-4 text-base font-bold text-brand-navy-dark shadow-lg shadow-brand-accent/30 transition-all hover:-translate-y-0.5 hover:bg-brand-accent-dark"
           >
             Request Free Estimate
           </Link>

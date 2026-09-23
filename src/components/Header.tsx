@@ -113,7 +113,7 @@ export function Header() {
           </a>
           <Link
             href="/#estimate"
-            className="whitespace-nowrap rounded-full bg-brand-blue px-5 py-2.5 text-sm font-bold text-white shadow-sm shadow-brand-blue/30 transition-all hover:bg-brand-blue-dark hover:shadow-md"
+            className="whitespace-nowrap rounded-full bg-brand-accent px-5 py-2.5 text-sm font-bold text-brand-navy-dark shadow-sm shadow-brand-accent/30 transition-all hover:bg-brand-accent-dark hover:shadow-md"
           >
             Request Free Estimate
           </Link>
@@ -224,7 +224,7 @@ export function Header() {
               <Link
                 href="/#estimate"
                 onClick={() => setIsOpen(false)}
-                className="rounded-full bg-brand-blue px-5 py-3 text-center text-base font-bold text-white"
+                className="rounded-full bg-brand-accent px-5 py-3 text-center text-base font-bold text-brand-navy-dark"
               >
                 Request Free Estimate
               </Link>
