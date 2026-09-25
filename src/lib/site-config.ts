@@ -58,6 +58,7 @@ export const primaryNav: NavItem[] = [
   { label: "Our Products", href: "/bathroom-fixtures-store/", children: productsSubNav },
   { label: "Bath Renovations", href: "/bathroom-renovations-toronto/" },
   { label: "Kitchen Renovations", href: "/kitchen-renovations/" },
+  { label: "Pricing", href: "/pricing/" },
   { label: "Gallery", href: "/gallery/" },
   { label: "Contact Us", href: "/contact-us/" },
 ];
@@ -65,6 +66,7 @@ export const primaryNav: NavItem[] = [
 export const footerCompanyLinks: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us/" },
+  { label: "Pricing", href: "/pricing/" },
   { label: "Gallery", href: "/gallery/" },
   { label: "Contact Us", href: "/contact-us/" },
 ];
