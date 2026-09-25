@@ -24,11 +24,11 @@ const pills = [
 ];
 
 const btnDark =
-  "rounded-md border border-brand-accent bg-neutral-900 px-8 py-3 text-center font-heading text-xl font-medium uppercase tracking-wide text-white transition-colors hover:bg-black";
+  "rounded-md border border-brand-accent bg-brand-purple px-8 py-3 text-center font-heading text-xl font-medium uppercase tracking-wide text-white transition-colors hover:bg-brand-navy-dark";
 
 export function Hero() {
   return (
-    <section className="overflow-hidden bg-black">
+    <section className="overflow-hidden bg-brand-navy-dark">
       <div className="grid h-[180px] grid-cols-3 border-y border-brand-accent sm:h-[260px] lg:h-[300px] lg:grid-cols-5">
         {strip.map((item, i) => (
           <div
@@ -58,6 +58,10 @@ export function Hero() {
         </div>
       </div>
 
+      <svg viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" className="block h-8 w-full sm:h-12" style={{ background: "#a9770a" }}>
+        <path d="M0 0 C 240 48 480 48 720 24 C 960 0 1200 0 1440 40 L1440 48 L0 48 Z" fill="#060f2a" />
+      </svg>
+
       <div className="mx-auto grid max-w-7xl items-end gap-8 px-4 pt-14 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:pt-20">
         <div className="pb-4 text-center lg:pb-20 lg:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-accent">
@@ -80,7 +84,7 @@ export function Hero() {
               <Link
                 key={pill.href}
                 href={pill.href}
-                className="rounded-md border border-brand-accent/70 bg-neutral-900 px-3 py-3 text-center font-heading text-lg font-medium uppercase tracking-wide text-white transition-colors hover:border-brand-accent hover:bg-brand-accent hover:text-black"
+                className="rounded-md border border-brand-accent/70 bg-brand-purple px-3 py-3 text-center font-heading text-lg font-medium uppercase tracking-wide text-white transition-colors hover:border-brand-accent hover:bg-brand-accent hover:text-brand-navy-dark"
               >
                 {pill.label}
               </Link>

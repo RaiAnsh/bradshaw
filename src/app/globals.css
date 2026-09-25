@@ -2,19 +2,19 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #111111;
+  --foreground: #0d1b3e;
 
-  --color-navy: #141414;
-  --color-navy-dark: #050505;
-  --color-purple: #1c1c1c;
-  --color-purple-light: #2b2b2b;
-  --color-blue: #9a6f0c;
-  --color-blue-dark: #7a560a;
-  --color-blue-light: #faf3df;
-  --color-sky: #e9bd55;
-  --color-mist: #f6f4ef;
-  --color-accent: #dcab35;
-  --color-accent-dark: #bf8f1f;
+  --color-navy: #0d1b3e;
+  --color-navy-dark: #060f2a;
+  --color-purple: #16296a;
+  --color-purple-light: #24408f;
+  --color-blue: #1e3f94;
+  --color-blue-dark: #142c6e;
+  --color-blue-light: #eef2fb;
+  --color-sky: #f0cf7a;
+  --color-mist: #f4efe4;
+  --color-accent: #e0a81c;
+  --color-accent-dark: #b8860b;
 }
 
 @theme inline {
@@ -55,5 +55,5 @@ h2.font-heading {
 }
 
 .bg-gold-band {
-  background: linear-gradient(180deg, #f6d06a 0%, #dcab35 40%, #8f6510 100%);
+  background: linear-gradient(180deg, #fbe38a 0%, #e0a81c 45%, #a9770a 100%);
 }

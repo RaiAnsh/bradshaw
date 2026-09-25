@@ -33,7 +33,7 @@ const items: { title: string; text: string; href: string; icon: ReactNode }[] = 
 
 export function OurWorkSection() {
   return (
-    <section className="bg-neutral-950 py-20 sm:py-28">
+    <section className="bg-brand-navy py-20 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <span className="text-base font-semibold uppercase tracking-[0.2em] text-brand-accent">Our Work</span>
@@ -56,7 +56,7 @@ export function OurWorkSection() {
             <Link
               key={item.href}
               href={item.href}
-              className="block rounded-2xl bg-neutral-900 p-7 ring-1 ring-brand-accent/30 transition-colors hover:ring-brand-accent sm:p-8"
+              className="block rounded-2xl bg-brand-purple p-7 ring-1 ring-brand-accent/30 transition-colors hover:ring-brand-accent sm:p-8"
             >
               <div className="flex items-center gap-4">
                 {item.icon}

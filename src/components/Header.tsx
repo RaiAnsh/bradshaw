@@ -44,8 +44,8 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${
         isScrolled
-          ? "border-brand-accent/40 bg-black/95 backdrop-blur-md"
-          : "border-brand-accent/40 bg-black"
+          ? "border-brand-accent/40 bg-brand-navy-dark/95 backdrop-blur-md"
+          : "border-brand-accent/40 bg-brand-navy-dark"
       }`}
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-6">
@@ -87,7 +87,7 @@ export function Header() {
                 </Link>
 
                 <div className="invisible absolute left-0 top-full z-10 w-72 pt-2 opacity-0 transition-all duration-150 group-hover/nav:visible group-hover/nav:opacity-100 group-focus-within/nav:visible group-focus-within/nav:opacity-100">
-                  <div className="overflow-hidden rounded-2xl bg-neutral-950 py-2 shadow-xl ring-1 ring-brand-accent/40">
+                  <div className="overflow-hidden rounded-2xl bg-brand-navy py-2 shadow-xl ring-1 ring-brand-accent/40">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
@@ -147,7 +147,7 @@ export function Header() {
       </div>
 
       <div
-        className={`grid overflow-hidden bg-black transition-all duration-300 ease-in-out xl:hidden ${
+        className={`grid overflow-hidden bg-brand-navy-dark transition-all duration-300 ease-in-out xl:hidden ${
           isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >

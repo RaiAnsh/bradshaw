@@ -50,7 +50,7 @@ const services: Service[] = [
 
 export function ServicesSection() {
   return (
-    <section className="bg-black py-20 sm:py-28">
+    <section className="bg-brand-navy-dark py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <span className="text-base font-semibold uppercase tracking-[0.2em] text-brand-accent">Our Services</span>
@@ -75,7 +75,7 @@ export function ServicesSection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="relative -mt-16 ml-6 mr-6 rounded-2xl border border-brand-accent/40 bg-neutral-900 p-7 shadow-sm sm:ml-10 sm:mr-10">
+              <div className="relative -mt-16 ml-6 mr-6 rounded-2xl border border-brand-accent/40 bg-brand-purple p-7 shadow-sm sm:ml-10 sm:mr-10">
                 <span className="text-sm font-medium text-brand-accent">{service.eyebrow}</span>
                 <h3 className="mt-1 font-heading text-2xl font-bold text-white">
                   {service.title}
