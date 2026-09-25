@@ -44,8 +44,8 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ${
         isScrolled
-          ? "border-slate-200 bg-white/95 shadow-sm backdrop-blur-md"
-          : "border-transparent bg-white"
+          ? "border-brand-accent/40 bg-black/95 backdrop-blur-md"
+          : "border-brand-accent/40 bg-black"
       }`}
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-6">
@@ -63,8 +63,8 @@ export function Header() {
                   href={item.href}
                   className={`whitespace-nowrap rounded-full px-2.5 py-2 text-[13px] font-semibold transition-colors ${
                     isActive
-                      ? "text-brand-blue-dark bg-brand-blue-light"
-                      : "text-slate-700 hover:bg-slate-100 hover:text-brand-navy"
+                      ? "text-brand-accent bg-white/10"
+                      : "text-white/90 hover:bg-white/10 hover:text-brand-accent"
                   }`}
                 >
                   {item.label}
@@ -78,8 +78,8 @@ export function Header() {
                   href={item.href}
                   className={`flex items-center gap-1 whitespace-nowrap rounded-full px-2.5 py-2 text-[13px] font-semibold transition-colors ${
                     isActive
-                      ? "text-brand-blue-dark bg-brand-blue-light"
-                      : "text-slate-700 hover:bg-slate-100 hover:text-brand-navy"
+                      ? "text-brand-accent bg-white/10"
+                      : "text-white/90 hover:bg-white/10 hover:text-brand-accent"
                   }`}
                 >
                   {item.label}
@@ -87,12 +87,12 @@ export function Header() {
                 </Link>
 
                 <div className="invisible absolute left-0 top-full z-10 w-72 pt-2 opacity-0 transition-all duration-150 group-hover/nav:visible group-hover/nav:opacity-100 group-focus-within/nav:visible group-focus-within/nav:opacity-100">
-                  <div className="overflow-hidden rounded-2xl bg-white py-2 shadow-xl ring-1 ring-slate-200">
+                  <div className="overflow-hidden rounded-2xl bg-neutral-950 py-2 shadow-xl ring-1 ring-brand-accent/40">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-brand-blue-light hover:text-brand-blue-dark"
+                        className="block px-4 py-2.5 text-sm font-semibold text-white/90 transition-colors hover:bg-white/10 hover:text-brand-accent"
                       >
                         {child.label}
                       </Link>
@@ -107,7 +107,7 @@ export function Header() {
         <div className="hidden items-center gap-4 xl:flex">
           <a
             href={siteConfig.phone.href}
-            className="hidden whitespace-nowrap text-sm font-bold text-brand-navy transition-colors hover:text-brand-blue 2xl:block"
+            className="hidden whitespace-nowrap text-sm font-bold text-white transition-colors hover:text-brand-accent 2xl:block"
           >
             {siteConfig.phone.display}
           </a>
@@ -124,7 +124,7 @@ export function Header() {
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((prev) => !prev)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg text-brand-navy xl:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-lg text-white xl:hidden"
         >
           <span className="relative block h-4 w-6">
             <span
@@ -147,12 +147,12 @@ export function Header() {
       </div>
 
       <div
-        className={`grid overflow-hidden bg-white transition-all duration-300 ease-in-out xl:hidden ${
+        className={`grid overflow-hidden bg-black transition-all duration-300 ease-in-out xl:hidden ${
           isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >
         <div className="overflow-hidden">
-          <nav className="flex max-h-[70vh] flex-col gap-1 overflow-y-auto border-t border-slate-200 px-4 py-4">
+          <nav className="flex max-h-[70vh] flex-col gap-1 overflow-y-auto border-t border-white/15 px-4 py-4">
             {primaryNav.map((item) => {
               if (!item.children) {
                 return (
@@ -160,7 +160,7 @@ export function Header() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="rounded-lg px-3 py-2.5 text-base font-semibold text-slate-700 hover:bg-slate-100"
+                    className="rounded-lg px-3 py-2.5 text-base font-semibold text-white/90 hover:bg-white/10"
                   >
                     {item.label}
                   </Link>
@@ -171,11 +171,11 @@ export function Header() {
 
               return (
                 <div key={item.href}>
-                  <div className="flex items-center justify-between rounded-lg pr-1 hover:bg-slate-100">
+                  <div className="flex items-center justify-between rounded-lg pr-1 hover:bg-white/10">
                     <Link
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className="flex-1 px-3 py-2.5 text-base font-semibold text-slate-700"
+                      className="flex-1 px-3 py-2.5 text-base font-semibold text-white/90"
                     >
                       {item.label}
                     </Link>
@@ -186,7 +186,7 @@ export function Header() {
                       onClick={() =>
                         setOpenMobileSection(isSectionOpen ? null : item.href)
                       }
-                      className="flex h-9 w-9 shrink-0 items-center justify-center text-slate-500"
+                      className="flex h-9 w-9 shrink-0 items-center justify-center text-white/60"
                     >
                       <ChevronDown className={isSectionOpen ? "rotate-180" : ""} />
                     </button>
@@ -197,13 +197,13 @@ export function Header() {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <div className="ml-3 flex flex-col gap-0.5 border-l border-slate-200 py-1 pl-3">
+                      <div className="ml-3 flex flex-col gap-0.5 border-l border-white/15 py-1 pl-3">
                         {item.children.map((child) => (
                           <Link
                             key={child.href}
                             href={child.href}
                             onClick={() => setIsOpen(false)}
-                            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-navy"
+                            className="rounded-lg px-3 py-2 text-sm font-medium text-white/70 hover:bg-white/10 hover:text-brand-accent"
                           >
                             {child.label}
                           </Link>
@@ -214,10 +214,10 @@ export function Header() {
                 </div>
               );
             })}
-            <div className="mt-2 flex flex-col gap-2 border-t border-slate-200 pt-4">
+            <div className="mt-2 flex flex-col gap-2 border-t border-white/15 pt-4">
               <a
                 href={siteConfig.phone.href}
-                className="rounded-lg px-3 py-2.5 text-center text-base font-bold text-brand-navy"
+                className="rounded-lg px-3 py-2.5 text-center text-base font-bold text-white"
               >
                 Call {siteConfig.phone.display}
               </a>

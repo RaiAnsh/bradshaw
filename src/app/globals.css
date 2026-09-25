@@ -2,19 +2,19 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #10222a;
+  --foreground: #111111;
 
-  --color-navy: #0f2f36;
-  --color-navy-dark: #08202a;
-  --color-purple: #0b4a55;
-  --color-purple-light: #17707d;
-  --color-blue: #157a87;
-  --color-blue-dark: #0e5f6b;
-  --color-blue-light: #e5f1f2;
-  --color-sky: #8fd0d8;
-  --color-mist: #f4f7f8;
-  --color-accent: #f4b73f;
-  --color-accent-dark: #dc9f26;
+  --color-navy: #141414;
+  --color-navy-dark: #050505;
+  --color-purple: #1c1c1c;
+  --color-purple-light: #2b2b2b;
+  --color-blue: #9a6f0c;
+  --color-blue-dark: #7a560a;
+  --color-blue-light: #faf3df;
+  --color-sky: #e9bd55;
+  --color-mist: #f6f4ef;
+  --color-accent: #dcab35;
+  --color-accent-dark: #bf8f1f;
 }
 
 @theme inline {
@@ -46,4 +46,14 @@ html {
 
 .font-heading {
   font-family: var(--font-heading);
+}
+
+h1.font-heading,
+h2.font-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.bg-gold-band {
+  background: linear-gradient(180deg, #f6d06a 0%, #dcab35 40%, #8f6510 100%);
 }

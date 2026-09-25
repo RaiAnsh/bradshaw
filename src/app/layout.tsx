@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Space_Grotesk } from "next/font/google";
+import { DM_Sans, Oswald } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -11,7 +11,7 @@ const bodyFont = DM_Sans({
   display: "swap",
 });
 
-const headingFont = Space_Grotesk({
+const headingFont = Oswald({
   variable: "--font-heading",
   subsets: ["latin"],
   weight: ["500", "600", "700"],

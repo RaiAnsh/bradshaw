@@ -17,7 +17,9 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-3">
-              <LogoMark className="h-10 w-10 shrink-0" />
+              <span className="shrink-0 rounded-full bg-white p-0.5">
+                <LogoMark className="h-9 w-9" />
+              </span>
               <span className="font-heading text-lg font-bold text-white">
                 Bradshaw Plumbing
               </span>

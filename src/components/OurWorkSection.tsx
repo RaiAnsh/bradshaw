@@ -33,14 +33,14 @@ const items: { title: string; text: string; href: string; icon: ReactNode }[] = 
 
 export function OurWorkSection() {
   return (
-    <section className="bg-white py-20 sm:py-28">
+    <section className="bg-neutral-950 py-20 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
         <div className="lg:sticky lg:top-28 lg:self-start">
-          <span className="text-base font-semibold text-brand-blue">Our Work</span>
-          <h2 className="mt-3 font-heading text-3xl font-bold leading-tight text-brand-navy-dark sm:text-5xl">
+          <span className="text-base font-semibold uppercase tracking-[0.2em] text-brand-accent">Our Work</span>
+          <h2 className="mt-3 font-heading text-3xl font-bold leading-tight text-white sm:text-5xl">
             Great Service, Great Value!
           </h2>
-          <p className="mt-6 text-lg text-slate-700">
+          <p className="mt-6 text-lg text-white/80">
             We can fix your problem and clean up your water damage.
           </p>
           <Link
@@ -56,13 +56,13 @@ export function OurWorkSection() {
             <Link
               key={item.href}
               href={item.href}
-              className="block rounded-2xl bg-white p-7 shadow-[0_2px_16px_rgba(16,32,31,0.08)] ring-1 ring-slate-100 transition-shadow hover:shadow-[0_6px_24px_rgba(16,32,31,0.14)] sm:p-8"
+              className="block rounded-2xl bg-neutral-900 p-7 ring-1 ring-brand-accent/30 transition-colors hover:ring-brand-accent sm:p-8"
             >
               <div className="flex items-center gap-4">
                 {item.icon}
-                <h3 className="font-heading text-xl font-bold text-brand-navy-dark">{item.title}</h3>
+                <h3 className="font-heading text-xl font-bold text-white">{item.title}</h3>
               </div>
-              <p className="mt-4 text-base leading-7 text-slate-700">{item.text}</p>
+              <p className="mt-4 text-base leading-7 text-white/75">{item.text}</p>
             </Link>
           ))}
         </div>

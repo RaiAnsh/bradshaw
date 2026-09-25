@@ -50,14 +50,14 @@ const services: Service[] = [
 
 export function ServicesSection() {
   return (
-    <section className="bg-white pb-20 sm:pb-28">
+    <section className="bg-black py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-base font-semibold text-brand-blue">Our Services</span>
-          <h2 className="mt-3 font-heading text-3xl font-bold text-brand-navy-dark sm:text-5xl">
+          <span className="text-base font-semibold uppercase tracking-[0.2em] text-brand-accent">Our Services</span>
+          <h2 className="mt-3 font-heading text-3xl font-bold text-white sm:text-5xl">
             What Can We Help You With?
           </h2>
-          <p className="mt-5 text-base leading-7 text-slate-600">
+          <p className="mt-5 text-base leading-7 text-white/70">
             Scarborough &amp; GTA plumbing, bathroom, and kitchen renovation
             experts for over 35 years.
           </p>
@@ -75,13 +75,13 @@ export function ServicesSection() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="relative -mt-16 ml-6 mr-6 rounded-2xl bg-brand-mist p-7 shadow-sm sm:ml-10 sm:mr-10">
-                <span className="text-sm font-medium text-brand-blue">{service.eyebrow}</span>
-                <h3 className="mt-1 font-heading text-2xl font-bold text-brand-navy-dark">
+              <div className="relative -mt-16 ml-6 mr-6 rounded-2xl border border-brand-accent/40 bg-neutral-900 p-7 shadow-sm sm:ml-10 sm:mr-10">
+                <span className="text-sm font-medium text-brand-accent">{service.eyebrow}</span>
+                <h3 className="mt-1 font-heading text-2xl font-bold text-white">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600">{service.description}</p>
-                <span className="mt-4 inline-block border-b-2 border-brand-navy-dark pb-0.5 text-sm font-semibold text-brand-navy-dark transition-colors group-hover:border-brand-blue group-hover:text-brand-blue">
+                <p className="mt-3 text-sm leading-6 text-white/70">{service.description}</p>
+                <span className="mt-4 inline-block border-b-2 border-brand-accent pb-0.5 text-sm font-semibold text-brand-accent">
                   Explore
                 </span>
               </div>
