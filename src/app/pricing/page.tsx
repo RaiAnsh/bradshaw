@@ -6,9 +6,8 @@ import { priceGroups } from "@/lib/pricing";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Plumbing Service Prices",
-  description:
-    "Transparent starting prices for common plumbing services in Scarborough and the GTA from Bradshaw Plumbing Heating Renovations.",
+  title: "Plumbing Service Prices | Bradshaw Plumbing",
+  robots: { index: false, follow: false },
 };
 
 export default function PricingPage() {

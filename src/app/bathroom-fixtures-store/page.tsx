@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import { PlaceholderPage } from "@/components/PlaceholderPage";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Our Products",
-  description:
-    "Browse our showroom of toilets, vanities, tubs, and fixtures — supplied and installed by Bradshaw Plumbing.",
-};
+export const metadata: Metadata = pageMetadata("/bathroom-fixtures-store/");
 
 export default function OurProductsPage() {
   return (

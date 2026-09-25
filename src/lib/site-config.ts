@@ -3,8 +3,8 @@ export const siteConfig = {
   shortName: "Bradshaw Plumbing",
   tagline: "From Tap Repair to Full Renovation",
   description:
-    "Scarborough & GTA plumbing, bathroom, and kitchen renovation experts for over 35 years. Licensed, insured, and available 24/7.",
-  url: "https://www.bradshawplumbing.com",
+    "Your trusted plumber in Scarborough. We're your go-to plumbing contractor for top-quality services and plumbing supplies in the area.",
+  url: "https://bradshawplumbing.com",
   phone: {
     display: "416-286-7511",
     href: "tel:+14162867511",
@@ -58,7 +58,6 @@ export const primaryNav: NavItem[] = [
   { label: "Our Products", href: "/bathroom-fixtures-store/", children: productsSubNav },
   { label: "Bath Renovations", href: "/bathroom-renovations-toronto/" },
   { label: "Kitchen Renovations", href: "/kitchen-renovations/" },
-  { label: "Pricing", href: "/pricing/" },
   { label: "Gallery", href: "/gallery/" },
   { label: "Contact Us", href: "/contact-us/" },
 ];
@@ -66,7 +65,6 @@ export const primaryNav: NavItem[] = [
 export const footerCompanyLinks: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us/" },
-  { label: "Pricing", href: "/pricing/" },
   { label: "Gallery", href: "/gallery/" },
   { label: "Contact Us", href: "/contact-us/" },
 ];

@@ -13,12 +13,9 @@ import toiletInstallImage from "../../../public/images/plumbing/technician-toile
 import integrityImage from "../../../public/images/plumbing/value-integrity.webp";
 import professionalismImage from "../../../public/images/plumbing/value-professionalism.webp";
 import qualityImage from "../../../public/images/plumbing/value-quality.webp";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Plumbing Services",
-  description:
-    "Affordable, licensed plumbing services in Scarborough, Toronto & the GTA since 1989. 24/7 emergency service, free estimates.",
-};
+export const metadata: Metadata = pageMetadata("/plumbing-services-toronto/");
 
 const servicesColumns = [
   [

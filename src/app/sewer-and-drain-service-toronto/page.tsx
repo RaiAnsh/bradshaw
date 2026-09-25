@@ -6,12 +6,9 @@ import { EstimateSection } from "@/components/EstimateSection";
 
 import heroImage from "../../../public/images/stock/water-heater.webp";
 import introImage from "../../../public/images/plumbing/technician-pipe-repair.webp";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Sewer & Drain Service",
-  description:
-    "Residential & commercial sewer and drain services in Scarborough, Pickering, Toronto & the GTA since 1989.",
-};
+export const metadata: Metadata = pageMetadata("/sewer-and-drain-service-toronto/");
 
 const faqItems = [
   {

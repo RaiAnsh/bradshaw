@@ -7,12 +7,9 @@ import { EstimateSection } from "@/components/EstimateSection";
 
 import heroImage from "../../../public/images/stock/kitchen-bright.webp";
 import materialsImage from "../../../public/images/stock/kitchen-modern.webp";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Kitchen Renovations",
-  description:
-    "Full kitchen renovations and remodeling in Scarborough, Toronto, Pickering & the GTA — from plumbing upgrades to complete remodels.",
-};
+export const metadata: Metadata = pageMetadata("/kitchen-renovations/");
 
 const upgradeServices = [
   [

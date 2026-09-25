@@ -9,12 +9,9 @@ import { EstimateSection } from "@/components/EstimateSection";
 import heroImage from "../../../public/images/products/bathtub.jpg";
 import trendsImage from "../../../public/images/products/shower.jpg";
 import showroomImage from "../../../public/images/products/vanity.jpg";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Bath Renovations",
-  description:
-    "Full bathroom renovations from design to installation, serving Scarborough, Toronto, Pickering & the GTA since 1989.",
-};
+export const metadata: Metadata = pageMetadata("/bathroom-renovations-toronto/");
 
 const upgradeServices = [
   [

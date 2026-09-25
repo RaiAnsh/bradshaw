@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { siteConfig } from "@/lib/site-config";
+import { seoByPath } from "@/lib/seo";
 
 const bodyFont = DM_Sans({
   variable: "--font-body",
@@ -21,17 +22,30 @@ const headingFont = Oswald({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | ${siteConfig.tagline}`,
-    template: `%s | ${siteConfig.shortName}`,
+    default: seoByPath["/"].title,
+    template: "%s",
   },
-  description: siteConfig.description,
+  description: seoByPath["/"].description,
+  alternates: { canonical: "/" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
-    title: siteConfig.name,
-    description: siteConfig.description,
-    url: siteConfig.url,
-    siteName: siteConfig.shortName,
+    title: seoByPath["/"].title,
+    description: seoByPath["/"].description,
+    url: "/",
+    siteName: siteConfig.name,
     locale: "en_CA",
     type: "website",
+    images: ["/images/storefront.webp"],
   },
 };
 

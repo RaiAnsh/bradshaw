@@ -6,12 +6,9 @@ import { EstimateSection } from "@/components/EstimateSection";
 
 import heroImage from "../../../public/images/stock/industrial-pipes.webp";
 import introImage from "../../../public/images/plumbing/value-professionalism.webp";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Backwater Valve Installation",
-  description:
-    "Backwater valve installation to protect your basement from flooding — serving Scarborough, Pickering, Toronto & the GTA since 1989.",
-};
+export const metadata: Metadata = pageMetadata("/backwater-valve-installation-toronto/");
 
 const faqItems = [
   {

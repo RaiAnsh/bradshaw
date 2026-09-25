@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import { PlaceholderPage } from "@/components/PlaceholderPage";
 import { EstimateSection } from "@/components/EstimateSection";
 import { siteConfig } from "@/lib/site-config";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description:
-    "Get in touch with Bradshaw Plumbing Heating Renovations — call 416-286-7511 or visit our Scarborough showroom at 12 Old Kingston Rd.",
-};
+export const metadata: Metadata = pageMetadata("/contact-us/");
 
 function PhoneIcon() {
   return (

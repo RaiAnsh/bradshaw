@@ -6,12 +6,9 @@ import { EstimateSection } from "@/components/EstimateSection";
 
 import heroImage from "../../../public/images/storefront.webp";
 import introImage from "../../../public/images/about/parts-counter.webp";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Commercial Plumbing",
-  description:
-    "Commercial plumbing services for businesses across Scarborough, Toronto & the GTA — 24/7 emergency service since 1989.",
-};
+export const metadata: Metadata = pageMetadata("/commercial-plumbing-toronto/");
 
 const faqItems = [
   {

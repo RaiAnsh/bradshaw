@@ -7,12 +7,9 @@ import heroImage from "../../../public/images/about/parts-counter.webp";
 import storefrontImage from "../../../public/images/storefront.webp";
 import showroomImage from "../../../public/images/about/showroom.webp";
 import counterImage from "../../../public/images/about/parts-counter.webp";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Us",
-  description:
-    "Family owned and operated since 1989 — learn about Bradshaw Plumbing Heating Renovations, Scarborough's trusted plumbing and renovation experts.",
-};
+export const metadata: Metadata = pageMetadata("/about-us/");
 
 export default function AboutUsPage() {
   return (

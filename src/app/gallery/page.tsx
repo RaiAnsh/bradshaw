@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import { EstimateSection } from "@/components/EstimateSection";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { galleryPhotos } from "@/lib/gallery-photos";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Gallery",
-  description:
-    "Take a look inside our Scarborough showroom — plumbing fixtures, tile, and bathroom design vignettes from Bradshaw Plumbing.",
-};
+export const metadata: Metadata = pageMetadata("/gallery/");
 
 export default function GalleryPage() {
   return (

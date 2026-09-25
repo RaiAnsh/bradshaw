@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PlaceholderPage } from "@/components/PlaceholderPage";
 import { productsSubNav } from "@/lib/site-config";
+import { pageMetadata } from "@/lib/seo";
 
 const slugToLabel = new Map(
   productsSubNav.map((item) => [item.href.split("/").filter(Boolean).pop() as string, item.label])
@@ -19,12 +20,8 @@ export async function generateMetadata({
   params,
 }: ProductCategoryPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const label = slugToLabel.get(slug);
-  if (!label) return {};
-  return {
-    title: label,
-    description: `${label} supplied and professionally installed by Bradshaw Plumbing — Scarborough & the GTA.`,
-  };
+  if (!slugToLabel.has(slug)) return {};
+  return pageMetadata(`/product-category/${slug}/`);
 }
 
 export default async function ProductCategoryPage({ params }: ProductCategoryPageProps) {

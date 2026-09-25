@@ -9,12 +9,9 @@ import { EstimateSection } from "@/components/EstimateSection";
 
 import heroImage from "../../../public/images/stock/pipe-in-cabinet.webp";
 import introImage from "../../../public/images/plumbing/technician-pipe-repair.webp";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Residential Plumbing Services",
-  description:
-    "Reliable residential plumbing services in Scarborough, Pickering, Toronto & the GTA since 1989 — 24/7 emergency service, free estimates.",
-};
+export const metadata: Metadata = pageMetadata("/residential-plumbing-toronto/");
 
 const faqItems = [
   {

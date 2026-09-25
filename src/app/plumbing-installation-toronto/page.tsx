@@ -6,12 +6,9 @@ import { EstimateSection } from "@/components/EstimateSection";
 
 import heroImage from "../../../public/images/stock/pipe-in-wall.webp";
 import introImage from "../../../public/images/plumbing/technician-toilet-install.webp";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Plumbing Installation",
-  description:
-    "Plumbing installation services for residential and commercial projects in Scarborough, Pickering, Toronto & the GTA since 1989.",
-};
+export const metadata: Metadata = pageMetadata("/plumbing-installation-toronto/");
 
 const faqItems = [
   {

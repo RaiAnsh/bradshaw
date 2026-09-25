@@ -6,12 +6,9 @@ import { EstimateSection } from "@/components/EstimateSection";
 
 import heroImage from "../../../public/images/about/parts-counter.webp";
 import introImage from "../../../public/images/plumbing/value-integrity.webp";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Backflow Preventer Installation",
-  description:
-    "Certified backflow preventer installation to protect your water supply — serving Scarborough, Pickering, Toronto & the GTA since 1989.",
-};
+export const metadata: Metadata = pageMetadata("/backflow-preventer-installation-toronto/");
 
 const faqItems = [
   {
