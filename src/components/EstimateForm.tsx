@@ -3,6 +3,8 @@
 import { useState, type FormEvent } from "react";
 import { siteConfig } from "@/lib/site-config";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xppwjypr";
+
 type Status = "idle" | "submitting" | "success" | "error";
 
 export function EstimateForm() {
@@ -22,10 +24,11 @@ export function EstimateForm() {
     setErrorMessage("");
 
     try {
-      const response = await fetch("/api/request-estimate", {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
+          _subject: "New free estimate request",
           name: data.get("name"),
           phone: data.get("phone"),
           city: data.get("city"),
@@ -36,7 +39,8 @@ export function EstimateForm() {
 
       if (!response.ok) {
         const payload = await response.json().catch(() => null);
-        throw new Error(payload?.error ?? "Something went wrong. Please try again.");
+        const detail = payload?.errors?.map((e: { message: string }) => e.message).join(", ");
+        throw new Error(detail || "Something went wrong. Please try again.");
       }
 
       setStatus("success");

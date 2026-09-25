@@ -31,22 +31,11 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Contact form / email
 
-The "Request a Free Estimate" form posts to `/api/request-estimate`, which sends
-email via the [Resend](https://resend.com) HTTP API (no SDK dependency — just
-`fetch`). Set these in `.env.local` (see `.env.example`):
-
-```bash
-RESEND_API_KEY=re_xxx
-ESTIMATE_FROM_EMAIL="Bradshaw Plumbing <estimates@bradshawplumbing.com>"
-ESTIMATE_TO_EMAIL=sarthak@bradshawplumbing.com   # optional, defaults to this
-```
-
-`ESTIMATE_FROM_EMAIL` must be on a domain verified in Resend. Without these env
-vars set, the form still validates and submits correctly but returns a friendly
-"call us directly" error instead of silently dropping the lead — set the vars
-before going live.
-
-Add the same env vars in the Vercel project settings for production/preview.
+The "Request a Free Estimate" form posts JSON straight to a
+[Formspree](https://formspree.io) endpoint (`FORMSPREE_ENDPOINT` in
+`src/components/EstimateForm.tsx`). Submissions are emailed by Formspree; set
+the notification address and spam settings in the Formspree dashboard. No
+environment variables are needed.
 
 ## Brand
 

@@ -3,17 +3,17 @@ import Image from "next/image";
 import plumber from "../../public/images/plumber.png";
 import pipeCabinet from "../../public/images/stock/pipe-in-cabinet.webp";
 import waterHeater from "../../public/images/stock/water-heater.webp";
-import pipes from "../../public/images/stock/industrial-pipes.webp";
+import kitchen from "../../public/images/stock/kitchen-bright.webp";
 import tech from "../../public/images/plumbing/technician-pipe-repair.webp";
-import faucet from "../../public/images/products/faucet.webp";
+import toiletInstall from "../../public/images/plumbing/technician-toilet-install.webp";
 import { siteConfig } from "@/lib/site-config";
 
 const strip = [
   { src: pipeCabinet, alt: "Under-sink plumbing installation" },
-  { src: waterHeater, alt: "Tankless water heater installation" },
-  { src: pipes, alt: "Commercial piping" },
+  { src: toiletInstall, alt: "Technician installing a toilet" },
+  { src: kitchen, alt: "Bright renovated kitchen" },
   { src: tech, alt: "Bradshaw technician at work" },
-  { src: faucet, alt: "Showroom fixtures" },
+  { src: waterHeater, alt: "Tankless water heater installation" },
 ];
 
 const pills = [
@@ -41,7 +41,7 @@ export function Hero() {
               fill
               priority={i < 3}
               sizes="(min-width: 1024px) 20vw, 34vw"
-              className="object-cover grayscale contrast-110"
+              className="object-cover"
             />
           </div>
         ))}
