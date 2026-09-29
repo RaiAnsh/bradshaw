@@ -128,7 +128,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="text-slate-500 transition-colors hover:text-slate-300"
           >
-            anshrai.com
+            arweb
           </a>
         </p>
       </div>
