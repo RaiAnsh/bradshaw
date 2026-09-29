@@ -123,12 +123,12 @@ export function Footer() {
         <p className="mt-3 text-center text-[11px] text-slate-600 sm:text-right">
           Site by{" "}
           <a
-            href="https://arweb.co"
+            href="https://anshrai.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-500 transition-colors hover:text-slate-300"
           >
-            arweb
+            anshrai.com
           </a>
         </p>
       </div>
