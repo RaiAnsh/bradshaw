@@ -112,7 +112,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-2 border-t border-white/10 pt-6 sm:flex-row sm:gap-4">
           <p className="text-xs text-slate-500">
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
@@ -120,6 +120,17 @@ export function Footer() {
             Licensed &amp; insured &middot; Available 24/7
           </p>
         </div>
+        <p className="mt-3 text-center text-[11px] text-slate-600 sm:text-right">
+          Site by{" "}
+          <a
+            href="https://arweb.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-500 transition-colors hover:text-slate-300"
+          >
+            arweb
+          </a>
+        </p>
       </div>
     </footer>
   );
