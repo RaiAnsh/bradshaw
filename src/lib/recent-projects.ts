@@ -2,8 +2,6 @@ import type { StaticImageData } from "next/image";
 
 import project_01_thumb from "../../public/images/recent-projects/thumbs/project-01.webp";
 import project_01_full from "../../public/images/recent-projects/full/project-01.webp";
-import project_02_thumb from "../../public/images/recent-projects/thumbs/project-02.webp";
-import project_02_full from "../../public/images/recent-projects/full/project-02.webp";
 import project_03_thumb from "../../public/images/recent-projects/thumbs/project-03.webp";
 import project_03_full from "../../public/images/recent-projects/full/project-03.webp";
 import project_04_thumb from "../../public/images/recent-projects/thumbs/project-04.webp";
@@ -20,8 +18,6 @@ import project_09_thumb from "../../public/images/recent-projects/thumbs/project
 import project_09_full from "../../public/images/recent-projects/full/project-09.webp";
 import project_10_thumb from "../../public/images/recent-projects/thumbs/project-10.webp";
 import project_10_full from "../../public/images/recent-projects/full/project-10.webp";
-import project_11_thumb from "../../public/images/recent-projects/thumbs/project-11.webp";
-import project_11_full from "../../public/images/recent-projects/full/project-11.webp";
 
 export type RecentProjectPhoto = {
   slug: string;
@@ -35,12 +31,6 @@ export const recentProjectPhotos: RecentProjectPhoto[] = [
     slug: "project-01",
     thumb: project_01_thumb,
     full: project_01_full,
-    alt: "Bradshaw Plumbing completed bathroom renovation project",
-  },
-  {
-    slug: "project-02",
-    thumb: project_02_thumb,
-    full: project_02_full,
     alt: "Bradshaw Plumbing completed bathroom renovation project",
   },
   {
@@ -89,12 +79,6 @@ export const recentProjectPhotos: RecentProjectPhoto[] = [
     slug: "project-10",
     thumb: project_10_thumb,
     full: project_10_full,
-    alt: "Bradshaw Plumbing completed bathroom renovation project",
-  },
-  {
-    slug: "project-11",
-    thumb: project_11_thumb,
-    full: project_11_full,
     alt: "Bradshaw Plumbing completed bathroom renovation project",
   },
 ];
