@@ -2,16 +2,22 @@ import type { StaticImageData } from "next/image";
 
 import project_01_thumb from "../../public/images/recent-projects/thumbs/project-01.webp";
 import project_01_full from "../../public/images/recent-projects/full/project-01.webp";
+import project_12_thumb from "../../public/images/recent-projects/thumbs/project-12.webp";
+import project_12_full from "../../public/images/recent-projects/full/project-12.webp";
 import project_03_thumb from "../../public/images/recent-projects/thumbs/project-03.webp";
 import project_03_full from "../../public/images/recent-projects/full/project-03.webp";
 import project_04_thumb from "../../public/images/recent-projects/thumbs/project-04.webp";
 import project_04_full from "../../public/images/recent-projects/full/project-04.webp";
+import project_13_thumb from "../../public/images/recent-projects/thumbs/project-13.webp";
+import project_13_full from "../../public/images/recent-projects/full/project-13.webp";
 import project_05_thumb from "../../public/images/recent-projects/thumbs/project-05.webp";
 import project_05_full from "../../public/images/recent-projects/full/project-05.webp";
 import project_06_thumb from "../../public/images/recent-projects/thumbs/project-06.webp";
 import project_06_full from "../../public/images/recent-projects/full/project-06.webp";
 import project_07_thumb from "../../public/images/recent-projects/thumbs/project-07.webp";
 import project_07_full from "../../public/images/recent-projects/full/project-07.webp";
+import project_14_thumb from "../../public/images/recent-projects/thumbs/project-14.webp";
+import project_14_full from "../../public/images/recent-projects/full/project-14.webp";
 import project_08_thumb from "../../public/images/recent-projects/thumbs/project-08.webp";
 import project_08_full from "../../public/images/recent-projects/full/project-08.webp";
 import project_09_thumb from "../../public/images/recent-projects/thumbs/project-09.webp";
@@ -34,6 +40,12 @@ export const recentProjectPhotos: RecentProjectPhoto[] = [
     alt: "Bradshaw Plumbing completed bathroom renovation project",
   },
   {
+    slug: "project-12",
+    thumb: project_12_thumb,
+    full: project_12_full,
+    alt: "Bradshaw Plumbing completed bathtub and shower renovation",
+  },
+  {
     slug: "project-03",
     thumb: project_03_thumb,
     full: project_03_full,
@@ -44,6 +56,12 @@ export const recentProjectPhotos: RecentProjectPhoto[] = [
     thumb: project_04_thumb,
     full: project_04_full,
     alt: "Bradshaw Plumbing completed bathroom renovation project",
+  },
+  {
+    slug: "project-13",
+    thumb: project_13_thumb,
+    full: project_13_full,
+    alt: "Bradshaw Plumbing completed bathtub and shower renovation",
   },
   {
     slug: "project-05",
@@ -62,6 +80,12 @@ export const recentProjectPhotos: RecentProjectPhoto[] = [
     thumb: project_07_thumb,
     full: project_07_full,
     alt: "Bradshaw Plumbing completed bathroom renovation project",
+  },
+  {
+    slug: "project-14",
+    thumb: project_14_thumb,
+    full: project_14_full,
+    alt: "Bradshaw Plumbing completed bathtub and shower renovation",
   },
   {
     slug: "project-08",
