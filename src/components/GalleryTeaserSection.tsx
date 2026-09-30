@@ -3,7 +3,7 @@ import Image from "next/image";
 import { recentProjectPhotos } from "@/lib/recent-projects";
 
 const featuredSlugs = [
-  "project-03",
+  "project-15",
   "project-07",
   "project-05",
   "project-09",

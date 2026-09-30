@@ -4,8 +4,8 @@ import project_01_thumb from "../../public/images/recent-projects/thumbs/project
 import project_01_full from "../../public/images/recent-projects/full/project-01.webp";
 import project_12_thumb from "../../public/images/recent-projects/thumbs/project-12.webp";
 import project_12_full from "../../public/images/recent-projects/full/project-12.webp";
-import project_03_thumb from "../../public/images/recent-projects/thumbs/project-03.webp";
-import project_03_full from "../../public/images/recent-projects/full/project-03.webp";
+import project_15_thumb from "../../public/images/recent-projects/thumbs/project-15.webp";
+import project_15_full from "../../public/images/recent-projects/full/project-15.webp";
 import project_04_thumb from "../../public/images/recent-projects/thumbs/project-04.webp";
 import project_04_full from "../../public/images/recent-projects/full/project-04.webp";
 import project_13_thumb from "../../public/images/recent-projects/thumbs/project-13.webp";
@@ -46,10 +46,10 @@ export const recentProjectPhotos: RecentProjectPhoto[] = [
     alt: "Bradshaw Plumbing completed bathtub and shower renovation",
   },
   {
-    slug: "project-03",
-    thumb: project_03_thumb,
-    full: project_03_full,
-    alt: "Bradshaw Plumbing completed bathroom renovation project",
+    slug: "project-15",
+    thumb: project_15_thumb,
+    full: project_15_full,
+    alt: "Bradshaw Plumbing completed walk-in shower and freestanding tub renovation",
   },
   {
     slug: "project-04",
