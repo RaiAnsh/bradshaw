@@ -1,11 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
-import { galleryPhotos } from "@/lib/gallery-photos";
+import { recentProjectPhotos } from "@/lib/recent-projects";
 
-const featuredSlugs = ["showroom-16", "showroom-10", "showroom-25", "showroom-43", "showroom-11", "showroom-06"];
+const featuredSlugs = [
+  "project-02",
+  "project-07",
+  "project-05",
+  "project-09",
+  "project-04",
+  "project-10",
+];
 const featuredPhotos = featuredSlugs
-  .map((slug) => galleryPhotos.find((photo) => photo.slug === slug))
-  .filter((photo): photo is (typeof galleryPhotos)[number] => Boolean(photo));
+  .map((slug) => recentProjectPhotos.find((photo) => photo.slug === slug))
+  .filter((photo): photo is (typeof recentProjectPhotos)[number] => Boolean(photo));
 
 export function GalleryTeaserSection() {
   return (
@@ -25,14 +32,13 @@ export function GalleryTeaserSection() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <span className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-brand-sky ring-1 ring-inset ring-white/20">
-            Our Showroom
+            Our Work
           </span>
           <h2 className="mt-5 font-heading text-3xl font-extrabold text-white sm:text-4xl">
-            Let&rsquo;s Upgrade Your Home
+            Some of Our Recent Projects
           </h2>
           <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">
-            Step inside our Scarborough showroom &mdash; browse fixture
-            displays, tile selections, and bathroom design vignettes to spark
+            Browse a few completed bathroom renovations and installations to spark
             ideas for your own renovation.
           </p>
         </div>

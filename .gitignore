@@ -39,6 +39,7 @@ yarn-error.log*
 
 # raw source photos (already processed into public/images/) — kept locally only
 /photos
+/public/recent-projects
 
 # typescript
 *.tsbuildinfo
